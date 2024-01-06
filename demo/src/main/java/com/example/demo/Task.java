@@ -1,3 +1,4 @@
+package com.example.demo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,8 +17,10 @@ public class Task {
     private String description;
 
     private boolean completed;
-
-
+    
+    public void setId(Long id){
+        this.id = id;
+    }
 }
 
 
